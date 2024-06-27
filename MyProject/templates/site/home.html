@@ -1,0 +1,27 @@
+{% extends 'layouts/layout.html' %}
+
+{% block content %}
+<div style="font-family: Courier New;" class="row m-5">
+    {% if card %}
+        {% for cards in card %}
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img class="card-img-top" src="{{ cards.path.url }}" alt="{{ cards.title }}">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ cards.title }}</h5>
+                        <p class="card-text">{{ cards.description }}</p>
+                        <a href="{% url 'edit_card' cards.id %}" class="btn btn-warning">Editar</a>
+                        <form method="post" action="{% url 'delete_card' cards.id %}" style="display:inline;">
+                            {% csrf_token %}
+                            <button type="submit" class="btn btn-danger">Deletar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    {% endif %}
+</div>
+<div class="text-center">
+    <a href="{% url 'create_card' %}" class="btn btn-success m-3">Adicionar Card</a>
+</div>
+{% endblock %}

@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        {% block title %}
+        {% endblock %}
+        <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+        {% block style %}
+        {% endblock %}
+        {% block script %}
+        {% endblock %}
+    </head>
+	<body>
+        {% include "partials/_nav.html" %}
+        {% include "partials/_alerts.html" %}
+
+        {% block content %} 
+        {% endblock %}
+
+        <script src="{% static 'assets/js/bootstrap.bundle.min.js' %}"></script>
+        <script src="{% static 'assets/js/jquery.js' %}"></script>
+        <script src="{% static 'assets/js/script.js' %}"></script>
+
+        {% include 'partials/_modal.html' %}
+        {% include "partials/_footer.html" %}
+        {% include "partials/_register.html" %}
+        {% include "partials/_login.html" %}
+
+	</body>
+</html>

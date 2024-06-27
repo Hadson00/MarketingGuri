@@ -1,0 +1,20 @@
+{% extends 'layouts/layout.html' %}
+{% load static %}
+{% block title %}
+<title>Edit</title>
+{% endblock %}
+{% block content %}
+  <div style="font-family: Courier New;" class="container">
+    {% if card.path %}
+      <img src="{{card.path.url}}" alt="{{card.title}}" width="200px" height="200px">
+    {% endif %}
+    <form action="{% url 'edit_card' card.id %}" method="post" enctype="multipart/form-data">
+      {% csrf_token %}
+      {{form.as_p}}
+      <div class="text-center">
+        <button type="submit" class= "btn btn-info">Atualizar</button>
+      </div>
+    </form>
+  </div>
+      
+{% endblock %}
