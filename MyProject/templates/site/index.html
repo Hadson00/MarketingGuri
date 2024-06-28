@@ -4,7 +4,101 @@
 <title>Titulo da Página</title>
 {% endblock %}
 {% block content %}
-<div class="container">
-    {% include 'partials/_card.html' %}
-</div>
+<!-- Card -->
+<section class="container">
+    {% include 'partials/_carousel.html' %}
+</section>
+<!-- Empreendedorismo -->
+<section class="py-5" style="background-color: #F8FCFC;">
+    <div class="container">
+        <div class="text-center">
+            <h1>Empreendedorismo</h1>
+        </div>
+        <div style="align-items: center; justify-content: space-around;" class="d-flex text-center p-5">
+            <div>
+                <img src="{% static 'assets/img/emp.jpg' %}" alt="...">
+            </div>
+            <div>
+                <p>Empreendedorismo é a capacidade que uma pessoa tem de identificar problemas e oportunidades, desenvolver soluções e investir recursos na criação de algo positivo para a sociedade.
+                    Pode ser um negócio, um projeto ou mesmo um movimento que gere mudanças reais e impacto no cotidiano das pessoas.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Start Up -->
+<section class="py-5">
+    <div class="container">
+        <div class="text-center">
+            <h1>Start Up</h1>
+        </div>
+        <div style="align-items: center; justify-content: space-around;" class="d-flex text-center p-5">
+            <div>
+                <p>Startup é uma ideia de empresa ou uma empresa nascente voltada à tecnologia e inovação que tenha como objetivo desenvolver e aprimorar um modelo de negócio.
+                    As startups têm capacidade de desenvolver produto ou serviço inovador.  Para que se obtenha crescimento potencial é indispensável elaborar ações de planejamento, gestão e execução do negócio.
+                    A resposta de mercado determina o sucesso da startup, logo, o  foco principal é buscar soluções de problemas ou dor do cliente e criar uma solução inovadora que ainda não 
+                    foi solucionado pelo mercado.
+                    </p>
+            </div>
+            <div>
+                <img src="{% static 'assets/img/emp.jpg' %}" alt="...">
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Prototipo -->
+<section class="py-5" style="background-color: #F8FCFC;">
+    <div class="container">
+        <div class="text-center">
+            <h1>Protótipo</h1>
+        </div>
+        <div style="align-items: center; justify-content: space-around;" class="d-flex text-center p-5">
+            <div>
+                <img src="{% static 'assets/img/emp.jpg' %}" alt="...">
+            </div>
+            <div>
+                <p>A prototipação é um processo de visualização de um produto ou solução digital, que cria modelos de teste para refinar conceitos e definir prioridades antes da implementação de uma solução.
+                    Em outras palavras, um protótipo é uma amostra ou versão menos completa e mais barata de um produto ou sistema, que serve como modelo de teste para verificar e ajustar aspectos importantes do produto antes mesmo de criar a versão final dele.
+                    A partir de um protótipo, é possível:
+                    Perceber as funcionalidades do sistema;
+                    Entender como é a experiência do usuário com o produto;
+                    Validar uma ideia economizando tempo e recursos, etc.
+                    Com isso, a prototipação possibilita entender o que melhorar antes de implementar uma versão final do produto ou solução.
+                    </p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Pitch -->
+<section class="py-5">
+    <div class="container">
+        <div class="text-center">
+            <h1>Pitch</h1>
+        </div>
+        <div style="align-items: center; justify-content: space-around;" class="d-flex text-center p-5">
+            <div>
+                <p></p>
+            </div>
+            <div>
+                <img src="{% static 'assets/img/emp.jpg' %}" alt="...">
+            </div>   
+        </div>
+    </div>
+</section>
+<!-- Mentoria -->
+<section class="py-5" style="background-color: #F8FCFC;">
+    <div class="container">
+        <div class="text-center">
+            <h1>Mentoria</h1>
+        </div>
+        <div style="align-items: center; justify-content: space-around;" class="d-flex text-center p-5">
+            <div>
+                <img src="{% static 'assets/img/emp.jpg' %}" alt="...">
+            </div>   
+            <div>
+                <p></p>
+            </div>
+        </div>
+    </div>
+</section>
 {% endblock %}

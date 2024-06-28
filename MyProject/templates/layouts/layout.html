@@ -7,13 +7,23 @@
         {% block title %}
         {% endblock %}
         <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
-        <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/mystyle.css' %}">
         {% block style %}
         {% endblock %}
         {% block script %}
         {% endblock %}
+        <style>
+            @font-face {
+                font-family: Cinzel;
+                src: url("{% static 'assets/fonts/cinzel/CinzelDecorative-Regular.otf' %}") format(opentype);
+            }
+            @font-face {
+                font-family: Century Gothic;
+                src: url("{% static 'assets/fonts/century-gothic/Century Gothic.ttf' %}") format(truetype);
+            }
+        </style>
     </head>
-	<body>
+	<body style="font-family: Century Gothic;">
         {% include "partials/_nav.html" %}
         {% include "partials/_alerts.html" %}
 

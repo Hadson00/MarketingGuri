@@ -1,4 +1,4 @@
-.carousel-inner {
+  .carousel-inner {
     padding: 1em;
   }
   .card {
@@ -41,6 +41,6 @@
     }
   }
 
-  .white{
-    color: white;
+  h1{
+    color: #3572EF;
   }
