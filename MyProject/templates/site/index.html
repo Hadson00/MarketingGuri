@@ -15,16 +15,38 @@
             <h1>Empreendedorismo</h1>
         </div>
         <div style="align-items: center; justify-content: space-around;" class="d-flex text-center p-5">
-            <div>
-                <img src="{% static 'assets/img/emp.jpg' %}" alt="...">
-            </div>
-            <div>
-                <p>Empreendedorismo é a capacidade que uma pessoa tem de identificar problemas e oportunidades, desenvolver soluções e investir recursos na criação de algo positivo para a sociedade.
+            <div class="flip-card-container">
+                <div class="flip-card">      
+                  <div class="card-front">
+                    <figure>
+                      <img src="{% static 'assets/img/emp.jpg' %}" alt="...">
+                    </figure>
+                  </div>
+              
+                  <div class="card-back">
+                    <button>Book</button>
+                    <div class="design-container">
+                      <span class="design design--1"></span>
+                      <span class="design design--2"></span>
+                      <span class="design design--3"></span>
+                      <span class="design design--4"></span>
+                      <span class="design design--5"></span>
+                      <span class="design design--6"></span>
+                      <span class="design design--7"></span>
+                      <span class="design design--8"></span>
+                    </div>
+                  </div>
+              
+                </div>
+              </div>
+              <!-- /flip-card-container -->
+            <div class="p-5">
+                <p>
+                    Empreendedorismo é a capacidade que uma pessoa tem de identificar problemas e oportunidades, desenvolver soluções e investir recursos na criação de algo positivo para a sociedade.
                     Pode ser um negócio, um projeto ou mesmo um movimento que gere mudanças reais e impacto no cotidiano das pessoas.
                 </p>
             </div>
         </div>
-    </div>
 </section>
 <!-- Start Up -->
 <section class="py-5">
@@ -33,12 +55,13 @@
             <h1>Start Up</h1>
         </div>
         <div style="align-items: center; justify-content: space-around;" class="d-flex text-center p-5">
-            <div>
-                <p>Startup é uma ideia de empresa ou uma empresa nascente voltada à tecnologia e inovação que tenha como objetivo desenvolver e aprimorar um modelo de negócio.
+            <div class="p-5">
+                <p>
+                    Startup é uma ideia de empresa ou uma empresa nascente voltada à tecnologia e inovação que tenha como objetivo desenvolver e aprimorar um modelo de negócio.
                     As startups têm capacidade de desenvolver produto ou serviço inovador.  Para que se obtenha crescimento potencial é indispensável elaborar ações de planejamento, gestão e execução do negócio.
                     A resposta de mercado determina o sucesso da startup, logo, o  foco principal é buscar soluções de problemas ou dor do cliente e criar uma solução inovadora que ainda não 
                     foi solucionado pelo mercado.
-                    </p>
+                </p>
             </div>
             <div>
                 <img src="{% static 'assets/img/emp.jpg' %}" alt="...">
@@ -56,7 +79,7 @@
             <div>
                 <img src="{% static 'assets/img/emp.jpg' %}" alt="...">
             </div>
-            <div>
+            <div class="p-5">
                 <p>A prototipação é um processo de visualização de um produto ou solução digital, que cria modelos de teste para refinar conceitos e definir prioridades antes da implementação de uma solução.
                     Em outras palavras, um protótipo é uma amostra ou versão menos completa e mais barata de um produto ou sistema, que serve como modelo de teste para verificar e ajustar aspectos importantes do produto antes mesmo de criar a versão final dele.
                     A partir de um protótipo, é possível:
@@ -76,8 +99,15 @@
             <h1>Pitch</h1>
         </div>
         <div style="align-items: center; justify-content: space-around;" class="d-flex text-center p-5">
-            <div>
-                <p></p>
+            <div class="p-5">
+                <p>
+                    Pitch é uma apresentação curta e direta sobre uma empresa ou projeto com o objetivo de despertar a atenção de um investidor, parceiro ou cliente.
+                    Normalmente possui uma duração que varia entre 30 segundos e 20 minutos, de acordo com o tipo de apresentação, público, local e tempo disponível.
+                    Geralmente, o pitch é realizado presencialmente para uma pessoa ou um grupo de pessoas interessado na empresa.
+                    Mas também é possível fazer a apresentação por telefone e videoconferência, ou até mesmo enviar o conteúdo por e-mail ou mensagem instantânea.
+                    O termo pitch ficou famoso no ecossistema das startups, onde empreendedores criativos usam a apresentação rápida para convencer investidores a fazerem aportes em seus negócios nascentes.
+                    Dessa forma, a expressão se popularizou no mundo dos negócios e hoje é sinônimo de um discurso persuasivo e objetivo, que tem como objetivo vender uma ideia, projeto ou negócio a um público em potencial.
+                    </p>
             </div>
             <div>
                 <img src="{% static 'assets/img/emp.jpg' %}" alt="...">
@@ -95,7 +125,7 @@
             <div>
                 <img src="{% static 'assets/img/emp.jpg' %}" alt="...">
             </div>   
-            <div>
+            <div class="p-5">
                 <p></p>
             </div>
         </div>

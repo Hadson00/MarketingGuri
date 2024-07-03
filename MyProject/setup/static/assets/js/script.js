@@ -29,3 +29,8 @@ var multipleCardCarousel = document.querySelector(
   } else {
     $(multipleCardCarousel).addClass("slide");
   }
+
+function flipCard() {
+  const card = document.querySelector('.card');
+  card.classList.toggle('is-flipped');
+}

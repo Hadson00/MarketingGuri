@@ -1,0 +1,29 @@
+{% extends 'layouts/layout.html' %}
+{% load static %}
+{% block content %}
+<section class="py-5">
+    <div class="container">
+        <div class="text-center">
+            <h1>Start Up</h1>
+        </div>
+        <div style="align-items: center; justify-content: space-around;" class="d-flex text-center p-5">
+            <div class="p-5">
+                <p>
+                    Startup é uma ideia de empresa ou uma empresa nascente voltada à tecnologia e inovação que tenha como objetivo desenvolver e aprimorar um modelo de negócio.
+                    As startups têm capacidade de desenvolver produto ou serviço inovador.  Para que se obtenha crescimento potencial é indispensável elaborar ações de planejamento, gestão e execução do negócio.
+                    A resposta de mercado determina o sucesso da startup, logo, o  foco principal é buscar soluções de problemas ou dor do cliente e criar uma solução inovadora que ainda não 
+                    foi solucionado pelo mercado.
+                </p>
+            </div>
+            <div>
+                <img src="{% static 'assets/img/emp.jpg' %}" alt="...">
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            {% include 'partials/_card.html' %}
+        </div>
+    </div>
+</section>
+{% endblock %}

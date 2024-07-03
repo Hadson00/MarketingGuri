@@ -1,0 +1,32 @@
+{% extends 'layouts/layout.html' %}
+{% load static %}
+{% block content %}
+<section class="py-5" style="background-color: #F8FCFC;">
+    <div class="container">
+        <div class="text-center">
+            <h1>Protótipo</h1>
+        </div>
+        <div style="align-items: center; justify-content: space-around;" class="d-flex text-center p-5">
+            <div>
+                <img src="{% static 'assets/img/emp.jpg' %}" alt="...">
+            </div>
+            <div class="p-5">
+                <p>
+                    A prototipação é um processo de visualização de um produto ou solução digital, que cria modelos de teste para refinar conceitos e definir prioridades antes da implementação de uma solução.
+                    Em outras palavras, um protótipo é uma amostra ou versão menos completa e mais barata de um produto ou sistema, que serve como modelo de teste para verificar e ajustar aspectos importantes do produto antes mesmo de criar a versão final dele.
+                    A partir de um protótipo, é possível:
+                    Perceber as funcionalidades do sistema;
+                    Entender como é a experiência do usuário com o produto;
+                    Validar uma ideia economizando tempo e recursos, etc.
+                    Com isso, a prototipação possibilita entender o que melhorar antes de implementar uma versão final do produto ou solução.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            {% include 'partials/_card.html' %}
+        </div>
+    </div>
+</section>
+{% endblock %}

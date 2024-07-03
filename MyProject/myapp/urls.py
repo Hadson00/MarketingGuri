@@ -8,4 +8,9 @@ urlpatterns = [
     path("create/", create, name="create_card"),
     path("edit/<int:card_id>", edit, name="edit_card"),
     path("delete/<int:card_id>", delete_card, name="delete_card"),
+    path("empreendedorismo/", empreendedorismo, name="empreendedorismo"),
+    path("startUp/", startUp, name="startUp"),
+    path("prototipo/", prototipo, name="prototipo"),
+    path("pitch/", pitch, name="pitch"),
+    path("mentoria/", mentoria, name="mentoria"),
 ]

@@ -8,10 +8,6 @@
         {% endblock %}
         <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
         <link rel="stylesheet" href="{% static 'assets/css/mystyle.css' %}">
-        {% block style %}
-        {% endblock %}
-        {% block script %}
-        {% endblock %}
         <style>
             @font-face {
                 font-family: Cinzel;
@@ -27,7 +23,7 @@
         {% include "partials/_nav.html" %}
         {% include "partials/_alerts.html" %}
 
-        {% block content %} 
+        {% block content %}
         {% endblock %}
 
         <script src="{% static 'assets/js/bootstrap.bundle.min.js' %}"></script>

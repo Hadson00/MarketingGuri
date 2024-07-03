@@ -64,3 +64,68 @@ def delete_card(request, card_id):
         messages.success(request, 'Card deletado com sucesso!')
         return redirect('home')
     return render(request, 'site/delete.html', {'card': card})
+
+def empreendedorismo(request):
+    user = request.user    
+    card = Card.objects.all()
+    data_card = []
+    for cards in card:
+        data_card.append(    
+            {
+            'cards': cards,
+            'liked': cards.user_liked(user) if user.is_authenticated else False,
+            }
+        )
+    return render(request, 'site/sections/empreendedorismo.html', {'cards': data_card})
+
+def startUp(request):
+    user = request.user    
+    card = Card.objects.all()
+    data_card = []
+    for cards in card:
+        data_card.append(    
+            {
+            'cards': cards,
+            'liked': cards.user_liked(user) if user.is_authenticated else False,
+            }
+        )
+    return render(request, 'site/sections/startUp.html', {'cards': data_card})
+
+def prototipo(request):
+    user = request.user    
+    card = Card.objects.all()
+    data_card = []
+    for cards in card:
+        data_card.append(    
+            {
+            'cards': cards,
+            'liked': cards.user_liked(user) if user.is_authenticated else False,
+            }
+        )
+    return render(request, 'site/sections/prototipo.html', {'cards': data_card})
+
+def pitch(request):
+    user = request.user    
+    card = Card.objects.all()
+    data_card = []
+    for cards in card:
+        data_card.append(    
+            {
+            'cards': cards,
+            'liked': cards.user_liked(user) if user.is_authenticated else False,
+            }
+        )
+    return render(request, 'site/sections/pitch.html', {'cards': data_card})
+
+def mentoria(request):
+    user = request.user    
+    card = Card.objects.all()
+    data_card = []
+    for cards in card:
+        data_card.append(    
+            {
+            'cards': cards,
+            'liked': cards.user_liked(user) if user.is_authenticated else False,
+            }
+        )
+    return render(request, 'site/sections/mentoria.html', {'cards': data_card})

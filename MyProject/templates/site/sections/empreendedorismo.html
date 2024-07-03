@@ -1,0 +1,27 @@
+{% extends 'layouts/layout.html' %}
+{% load static %}
+{% block content %}
+<section class="py-5" style="background-color: #F8FCFC;">
+    <div class="container">
+        <div class="text-center">
+            <h1>Empreendedorismo</h1>
+        </div>
+        <div style="align-items: center; justify-content: space-around;" class="d-flex text-center p-5">
+            <div>
+                <img src="{% static 'assets/img/emp.jpg' %}" alt="...">
+            </div>
+            <div class="p-5">
+                <p>
+                    Empreendedorismo é a capacidade que uma pessoa tem de identificar problemas e oportunidades, desenvolver soluções e investir recursos na criação de algo positivo para a sociedade.
+                    Pode ser um negócio, um projeto ou mesmo um movimento que gere mudanças reais e impacto no cotidiano das pessoas.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            {% include 'partials/_card.html' %}
+        </div>
+    </div>
+</section>
+{% endblock %}
