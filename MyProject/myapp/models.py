@@ -1,10 +1,19 @@
 from django.db import models
 from users.models import User
 
+SECTION_CHOICES = {
+    'empreendedorismo': 'EMPREENDEDORISMO',
+    'startUp': 'STARTUP',
+    'prototipo': 'PROTOTIPO',
+    'pitch': 'PITCH',
+    'mentoria': 'MENTORIA',
+}
+
 class Card(models.Model):
     title = models.CharField(max_length=200)
     path = models.ImageField(upload_to="img/%Y/%m/%d/", blank=True)
     description = models.TextField()
+    section = models.CharField(max_length=16, choices=SECTION_CHOICES, default='startUp')
 
     def total_likes(self):
         return Like.objects.filter(card=self).count()

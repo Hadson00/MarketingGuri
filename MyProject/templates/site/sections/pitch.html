@@ -2,26 +2,27 @@
 {% load static %}
 {% block content %}
 <section class="py-5">
-    {% block section %}
-        <div class="container">
-            <div class="text-center">
-                <h1>Pitch</h1>
-            </div>
-            <div style="align-items: center; justify-content: space-around;" class="d-flex text-center p-5">
-                <div class="p-5">
-                    <p></p>
-                </div>
-                <div>
-                    <img src="{% static 'assets/img/emp.jpg' %}" alt="...">
-                </div>   
-            </div>
+    <div class="container">
+        <div class="text-center">
+            <h1>Pitch</h1>
         </div>
-    {% endblock %}
+        <div style="align-items: center; justify-content: space-around;" class="d-flex text-center p-5">
+            <div class="p-5">
+                <p></p>
+            </div>
+            <div>
+                <img src="{% static 'assets/img/emp.jpg' %}" alt="...">
+            </div>   
+        </div>
+    </div>
     <div class="container">
         <div class="row">
-            {% include 'partials/_card.html' %}
+            {% for card in cards %}
+                {% if card.cards.section == 'pitch' %}
+                    {% include 'partials/_card.html' %}
+                {% endif %}
+            {% endfor %}
         </div>
     </div>
 </section>
-
 {% endblock %}
