@@ -36,10 +36,6 @@
   align-items: center;
 }
 
-.card img {
-  max-height: 100%;
-}
-
 @media (max-width: 767px) {
   .card .img-wrapper {
     height: 17em;
@@ -60,8 +56,8 @@ h1{
   --dark: hsl(var(--hue), 25%, 10%);
   --grey: hsl(0, 0%, 50%);
 
-  width: 310px;
-  height: 500px;
+  width: 500px;
+  height: 400px;
 
   perspective: 1000px;
 }

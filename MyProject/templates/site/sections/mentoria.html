@@ -8,7 +8,7 @@
         </div>
         <div style="align-items: center; justify-content: space-around;" class="d-flex text-center p-5">
             <div>
-                <img src="{% static 'assets/img/emp.jpg' %}" alt="...">
+                <img src="{% static 'assets/img/mentoria.jpg' %}" alt="..." width="500" height="400">
             </div>   
             <div class="p-5">
                 <p></p>
@@ -17,7 +17,11 @@
     </div>
     <div class="container">
         <div class="row">
-            {% include 'partials/_card.html' %}
+            {% for card in cards %}
+                {% if card.cards.section == 'mentoria' %}
+                    {% include 'partials/_card.html' %}
+                {% endif %}
+            {% endfor %}
         </div>
     </div>
 </section>
