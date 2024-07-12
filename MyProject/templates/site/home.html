@@ -6,17 +6,23 @@
         <h1>{{card.section}}</h1>
         {% if card %}
             {% for cards in card %}
-                <div class="col-md-4">
+                <div class="col-md-3 pb-4">
                     <div class="card mb-4" style="width: 100%; height: 100%; text-align: justify;">
-                        <img class="card-img-top" src="{{ cards.path.url }}" alt="{{ cards.title }}">
+                        <div>
+                            <img class="card-img-top" src="{{ cards.path.url }}" alt="{{ cards.title }}">
+                        </div>
                         <div class="card-body">
-                            <h5 class="card-title">{{ cards.title }}</h5>
-                            <p class="card-text">{{ cards.description }}</p>
-                            <a href="{% url 'edit_card' cards.id %}" class="btn btn-warning">Editar</a>
+                            <div>
+                                <h5 class="card-title">{{ cards.title }}</h5>
+                                <p class="card-text">{{ cards.description }}</p>
+                            </div>
+                            <div>
+                                <a href="{% url 'edit_card' cards.id %}" class="btn btn-warning">Editar</a>
                             <form method="post" action="{% url 'delete_card' cards.id %}" style="display:inline;">
                                 {% csrf_token %}
                                 <button type="submit" class="btn btn-danger">Deletar</button>
                             </form>
+                            </div>
                         </div>
                     </div>
                 </div>

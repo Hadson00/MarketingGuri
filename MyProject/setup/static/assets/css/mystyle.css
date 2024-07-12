@@ -264,3 +264,40 @@ figure,
   --tr: 20;
   --op: 0.7;
 }
+
+.divhr{
+  border-style: solid; border-width: 1px 1px 1px 1px; 
+  border-color: #8282822E; 
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s; 
+  margin-top: 16px; 
+  margin-bottom: 0px;
+}
+
+.footer{
+  background-color: #F8FCFC;
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  border-color: #8282822E;
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  margin-top: 16px;
+  margin-bottom: 0px;
+  border-radius: 24px 24px 0px 0px;;
+}
+
+.navbox{
+  text-transform: None;
+  background-color: #3572EF;
+  border-radius: 6px 6px 6px 6px;
+  padding:clamp(7px, .1em, 5px) clamp(5px, 1.8em, 15px);
+}
+.navdiv{
+    height: 60x;
+    position: fixed;
+    top: 0;
+    transition: top 0.2s ease-in-out;
+    width: 100%;
+}
+
+.nav-up {
+    top: -60px;
+}
