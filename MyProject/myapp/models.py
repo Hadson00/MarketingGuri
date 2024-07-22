@@ -11,9 +11,8 @@ SECTION_CHOICES = {
 
 class Card(models.Model):
     title = models.CharField(max_length=200)
-    path = models.ImageField(upload_to="img/%Y/%m/%d/", blank=True)
     description = models.TextField()
-    section = models.CharField(max_length=16, choices=SECTION_CHOICES, default='startUp')
+    section = models.CharField(max_length=16, choices=SECTION_CHOICES, default='empreendedorismo')
 
     def total_likes(self):
         return Like.objects.filter(card=self).count()
