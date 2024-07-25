@@ -14,7 +14,7 @@
                                 <p class="card-text">{{ cards.description }}</p>
                             </div>
                             <div class="mt-auto">
-                                <a style="background-color: #454655; border: 0;" href="{% url 'edit_card' cards.id %}" class="btn btn-warning">Editar</a>
+                                <a style="background-color: #454655; border: 0; color: white;" href="{% url 'edit_card' cards.id %}" class="btn btn-warning">Editar</a>
                                 <form method="post" action="{% url 'delete_card' cards.id %}" style="display:inline;">
                                     {% csrf_token %}
                                     <button style="background-color: #E32F54; border: 0;" type="submit" class="btn btn-danger">Deletar</button>

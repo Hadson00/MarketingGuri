@@ -1,0 +1,106 @@
+[
+    {
+        "model": "users.user",
+        "pk": 7,
+        "fields":{
+            "username": "Pedro",
+            "password": "pbkdf2_sha256$720000$zEawpgIRFYEkBUsFULokoN$mplBNzl2pN2H+pA3vrDkCrJOVRsl5uj/6hgVt1Rtrcs=",
+            "email": "pedro@gmail.com"
+        }
+    },
+    {
+        "model": "users.user",
+        "pk": 8,
+        "fields":{
+            "username": "Miguel",
+            "password": "pbkdf2_sha256$720000$zEawpgIRFYEkBUsFULokoN$mplBNzl2pN2H+pA3vrDkCrJOVRsl5uj/6hgVt1Rtrcs=",
+            "email": "miguel@gmail.com"
+        }
+    },
+    {
+        "model": "users.user",
+        "pk": 9,
+        "fields":{
+            "username": "Ezequiel",
+            "password": "pbkdf2_sha256$720000$zEawpgIRFYEkBUsFULokoN$mplBNzl2pN2H+pA3vrDkCrJOVRsl5uj/6hgVt1Rtrcs=",
+            "email": "ezequiel@gmail.com"
+        }
+    },
+    {
+        "model": "myapp.card",
+        "pk": 2,
+        "fields":{
+            "title": "Pitch",
+            "path": "#",
+            "description": "texto 1",
+            "section": "empreendedorismo"
+        }
+    },
+    {
+        "model": "myapp.card",
+        "pk": 3,
+        "fields":{
+            "title": "rtr",
+            "path": "#",
+            "description": "texto 2",
+            "section": "startUp"
+        }
+    },
+    {
+        "model": "myapp.card",
+        "pk": 4,
+        "fields":{
+            "title": "rtr",
+            "path": "#",
+            "description": "texto 3",
+            "section": "prototipo"
+        }
+    },
+    {
+        "model": "myapp.card",
+        "pk": 5,
+        "fields":{
+            "title": "rtr",
+            "path": "#",
+            "description": "texto 4",
+            "section": "pitch"
+        }
+    },
+    {
+        "model": "myapp.card",
+        "pk": 5,
+        "fields":{
+            "title": "rtr",
+            "path": "#",
+            "description": "texto 5",
+            "section": "mentoria"
+        }
+    },
+    {
+        "model": "myapp.like",
+        "pk": 2,
+        "fields":{
+            "card_id": 1,
+            "user_id": 7
+           
+        }
+    },
+    {
+        "model": "myapp.like",
+        "pk": 3,
+        "fields":{
+            "card_id": 2,
+            "user_id": 8
+           
+        }
+    },
+    {
+        "model": "myapp.like",
+        "pk": 4,
+        "fields":{
+            "card_id": 2,
+            "user_id": 9
+           
+        }
+    }
+]
