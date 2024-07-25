@@ -290,14 +290,3 @@ figure,
   border-radius: 6px 6px 6px 6px;
   padding:clamp(7px, .1em, 5px) clamp(5px, 1.8em, 15px);
 }
-.navdiv{
-    height: 60x;
-    position: fixed;
-    top: 0;
-    transition: top 0.2s ease-in-out;
-    width: 100%;
-}
-
-.nav-up {
-    top: -60px;
-}
