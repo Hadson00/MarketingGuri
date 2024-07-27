@@ -7,8 +7,8 @@
         <p>Você tem certeza que deseja deletar o card "{{ card.title }}"?</p>
         <form method="post">
             {% csrf_token %}
-            <button type="submit" class="btn btn-danger">Deletar</button>
-            <a href="{% url 'home' %}" class="btn btn-secondary">Cancelar</a>
+            <button style="background-color: #3572EF; border: 0;" type="submit" class="btn btn-danger">Deletar</button>
+            <a style="background-color: #3572EF; border: 0;" href="{% url 'home' %}" class="btn btn-secondary">Cancelar</a>
         </form>
     </div>
 </div>
