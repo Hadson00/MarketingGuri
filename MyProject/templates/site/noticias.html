@@ -1,7 +1,7 @@
 {% extends 'layouts/layout.html' %}
 {% load static %}
 {% block scripts %}
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resultados da Busca</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
@@ -22,13 +22,13 @@
                             data.items.forEach(item => {
                                 if (count < 12) {
                                     const resultCard = document.createElement('div');
-                                    resultCard.className = 'col-md-4';
+                                    resultCard.className = 'col-md-4 d-flex align-items-stretch my-2';
                                     resultCard.innerHTML = `
-                                        <div class="card mb-4">
-                                            <div class="card-body">
+                                        <div class="card mb-4 h-100">
+                                            <div class="card-body d-flex flex-column">
                                                 <h5 class="card-title">${item.titulo}</h5>
-                                                <p class="card-text">${item.introducao}</p>
-                                                <a href="${item.link}" class="btn btn-primary">Leia mais</a>
+                                                <p class="card-text flex-grow-1">${item.introducao}</p>
+                                                <a href="${item.link}" class="btn btn-primary mt-auto">Leia mais</a>
                                             </div>
                                         </div>
                                     `;
@@ -53,6 +53,6 @@
 {% block content %}
     <div class="container">
         <h1 class="mt-5">Resultados da Busca</h1>
-        <div id="results" class="row mt-4"></div>
+        <div id="results" class="row mt-4" style="text-align: justify;"></div>
     </div>
 {% endblock %}
