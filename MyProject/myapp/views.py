@@ -129,3 +129,6 @@ def mentoria(request):
             }
         )
     return render(request, 'site/sections/mentoria.html', {'cards': data_card})
+
+def resultados(request):
+    return render(request, 'site/noticias.html')

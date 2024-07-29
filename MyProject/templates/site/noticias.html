@@ -1,0 +1,58 @@
+{% extends 'layouts/layout.html' %}
+{% load static %}
+{% block scripts %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultados da Busca</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const query = urlParams.get('query');
+            
+            if (query) {
+                const apiUrl = `https://servicodados.ibge.gov.br/api/v3/noticias/?busca='${query}'`;
+                
+                fetch(apiUrl)
+                    .then(response => response.json())
+                    .then(data => {
+                        const resultsContainer = document.getElementById('results');
+                        if (data && data.items && data.items.length > 0) {
+                            let count = 0;
+                            data.items.forEach(item => {
+                                if (count < 12) {
+                                    const resultCard = document.createElement('div');
+                                    resultCard.className = 'col-md-4';
+                                    resultCard.innerHTML = `
+                                        <div class="card mb-4">
+                                            <div class="card-body">
+                                                <h5 class="card-title">${item.titulo}</h5>
+                                                <p class="card-text">${item.introducao}</p>
+                                                <a href="${item.link}" class="btn btn-primary">Leia mais</a>
+                                            </div>
+                                        </div>
+                                    `;
+                                    resultsContainer.appendChild(resultCard);
+                                    count++;
+                                }
+                            });
+                        } else {
+                            resultsContainer.innerHTML = '<p>Nenhum resultado encontrado.</p>';
+                        }
+                    })
+                    .catch(error => {
+                        console.error('Erro ao buscar os dados:', error);
+                        document.getElementById('results').innerHTML = '<p>Ocorreu um erro ao buscar os dados.</p>';
+                    });
+            } else {
+                document.getElementById('results').innerHTML = '<p>Por favor, insira um termo de busca.</p>';
+            }
+        });
+    </script>
+{% endblock %}
+{% block content %}
+    <div class="container">
+        <h1 class="mt-5">Resultados da Busca</h1>
+        <div id="results" class="row mt-4"></div>
+    </div>
+{% endblock %}

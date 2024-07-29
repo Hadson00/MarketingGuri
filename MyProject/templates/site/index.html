@@ -221,11 +221,18 @@
         </div>
     </div>
 </section>
-<!-- Contato -->
+<!-- Pesquisa -->
 <section class="py-5" style="background-color: #F8FCFC;">
   <div class="container">
-    <h1 class="text-center">Fale Conosco</h1>
-    
+    <h1 class="text-center">Faça Sua Pesquisa</h1>
+    <div class="text-center py-5">
+      <h1>Busca de Notícias do IBGE</h1>
+      <form id="searchForm" action="resultados.html" method="GET">
+          <label for="query">Digite o texto para buscar:</label>
+          <input type="text" id="query" name="query" required>
+          <button style="background-color: #3572EF; border: 0;" type="submit" class="btn btn-success">Buscar</button>
+      </form>
+    </div>
   </div>
 </section>
 {% endblock %}

@@ -13,4 +13,5 @@ urlpatterns = [
     path("prototipo/", prototipo, name="prototipo"),
     path("pitch/", pitch, name="pitch"),
     path("mentoria/", mentoria, name="mentoria"),
+    path("resultados.html/", resultados, name="resultados"),
 ]
