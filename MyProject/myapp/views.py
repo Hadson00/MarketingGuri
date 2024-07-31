@@ -13,6 +13,7 @@ def home(request):
 def index(request):
     user = request.user    
     card = Card.objects.all()
+    most_like
     data_card = []
     for cards in card:
         data_card.append(    

@@ -1,38 +1,20 @@
 [
+
     {
-        "model": "users.user",
-        "pk": 7,
+        "model": "myapp.card",
+        "pk": 1,
         "fields":{
-            "username": "Pedro",
-            "password": "pbkdf2_sha256$720000$zEawpgIRFYEkBUsFULokoN$mplBNzl2pN2H+pA3vrDkCrJOVRsl5uj/6hgVt1Rtrcs=",
-            "email": "pedro@gmail.com"
-        }
-    },
-    {
-        "model": "users.user",
-        "pk": 8,
-        "fields":{
-            "username": "Miguel",
-            "password": "pbkdf2_sha256$720000$zEawpgIRFYEkBUsFULokoN$mplBNzl2pN2H+pA3vrDkCrJOVRsl5uj/6hgVt1Rtrcs=",
-            "email": "miguel@gmail.com"
-        }
-    },
-    {
-        "model": "users.user",
-        "pk": 9,
-        "fields":{
-            "username": "Ezequiel",
-            "password": "pbkdf2_sha256$720000$zEawpgIRFYEkBUsFULokoN$mplBNzl2pN2H+pA3vrDkCrJOVRsl5uj/6hgVt1Rtrcs=",
-            "email": "ezequiel@gmail.com"
+            "title": "Empreendedorismo Social",
+            "description": " O Empreendedorismo Social é aquele em que um serviço ou produto gera benefícios para determinada parcela da sociedade. Ele não tem o lucro como principal objetivo, mas pode gerar lucro também.",
+            "section": "empreendedorismo"
         }
     },
     {
         "model": "myapp.card",
         "pk": 2,
         "fields":{
-            "title": "Pitch",
-            "path": "#",
-            "description": "texto 1",
+            "title": "Empreendedorismo de Negócios",
+            "description": " Nessa categoria, enquadra-se a fundação de empresas com o objetivo de lucro, atendendo às necessidades do mercado consumidor.",
             "section": "empreendedorismo"
         }
     },
@@ -40,67 +22,157 @@
         "model": "myapp.card",
         "pk": 3,
         "fields":{
-            "title": "rtr",
-            "path": "#",
-            "description": "texto 2",
+            "title": "Empreendedorismo Corporativo",
+            "description": "No empreendedorismo corporativo são os colaboradores de uma empresa que geram mudanças e inovações, ou seja, trata-se de um empreendedorismo interno.",
+            "section": "empreendedorismo"
+        }
+    },
+    {
+        "model": "myapp.card",
+        "pk": 4,
+        "fields":{
+            "title": "Empreendedorismo Feminino",
+            "description": "O empreendedorismo feminino está em constante crescimento no Brasil. Damos esse nome para as empresas idealizadas ou comandadas por mulheres, sendo assim, frutos de lideranças femininas. ",
+            "section": "empreendedorismo"
+        }
+    },
+    {
+        "model": "myapp.card",
+        "pk": 5,
+        "fields":{
+            "title": "Empreendedorismo Individual",
+            "description": " Essas são as maneiras mais fáceis e práticas de empreender para quem quer ter um pequeno negócio. Entretanto, há limitações, como em relação ao faturamento ou ao número de funcionários, por exemplo. Muitas vezes, é por meio desse tipo de empresas que trabalham profissionais liberais e autônomos.",
+            "section": "empreendedorismo"
+        }
+    },
+    {
+        "model": "myapp.card",
+        "pk": 6,
+        "fields":{
+            "title": "Empreendedorismo Informal",
+            "description": "Como o próprio nome diz, o Empreendedorismo Informal é aquele praticado sem a formalização da lei. No caso do empreendedor, existe a vantagem de não precisar arcar com impostos, mas também não há nenhuma garantia trabalhista, como auxílio maternidade, auxílio doença, seguro desemprego ou aposentadoria.",
+            "section": "empreendedorismo"
+        }
+    },
+    {
+        "model": "myapp.card",
+        "pk": 7,
+        "fields":{
+            "title": "StartUp: Large company startups",
+            "description": "São empresas tradicionais de grande porte que estão em busca de se reinventar para continuar operando no mercado com eficiência. À medida que o mercado muda, elas precisam se adaptar, mas com o passar do tempo, talvez seja necessária uma reinvenção do modelo de negócios para sobreviver às mudanças. ",
             "section": "startUp"
         }
     },
     {
         "model": "myapp.card",
-        "pk": 4,
+        "pk": 8,
         "fields":{
-            "title": "rtr",
-            "path": "#",
-            "description": "texto 3",
+            "title": "StartUp: Lifestyle startups",
+            "description": "Empresas movidas por um estilo de vida, uma grande ideia que contribui para esse estilo e profissionais colaboradores que acreditam e querem vive",
+            "section": "startUp"
+        }
+    },
+    {
+        "model": "myapp.card",
+        "pk": 9,
+        "fields":{
+            "title": "StartUp: Scalable startups",
+            "description": "Modelos de Startup que buscam replicar um negócio para aumentar seu público e rendimento. Esse tipo de empresa já costuma ter pleno funcionamento e busca investimentos para replicar e escalar seu modelo de negócio. ",
+            "section": "startUp"
+        }
+    },
+    {
+        "model": "myapp.card",
+        "pk": 10,
+        "fields":{
+            "title": "StartUp: Social startups",
+            "description": "São startups que criam inovações com o objetivo de melhorar o panorama social, atender comunidades carentes e resolver problemas que causam um impacto social. Podem ser com ou sem fins lucrativos, mas é importante que seja baseada na contribuição para uma sociedade melhor. ",
+            "section": "startUp"
+        }
+    },
+    {
+        "model": "myapp.card",
+        "pk": 11,
+        "fields":{
+            "title": "Protótipo de Baixa Fidelidade",
+            "description": "Este tipo de protótipo também é conhecido como rascunho, wireframe e sketche. Geralmente são desenhos feitos à mão, em folha de papel ou com ajuda de post-it, representando como serão as características da interface e o seu funcionamento. Como o material utilizado para elaborar este protótipo é simples, consequentemente, o custo dessa solução é baixo. Por meio desta técnica, é possível obter diversas informações, sobretudo em relação aos requisitos da interface.",
             "section": "prototipo"
         }
     },
     {
         "model": "myapp.card",
-        "pk": 5,
+        "pk": 12,
         "fields":{
-            "title": "rtr",
-            "path": "#",
-            "description": "texto 4",
+            "title": "Protótipo de Média Fidelidade",
+            "description": "Este tipo de protótipo já demanda um pouco mais de tempo para ser elaborado e está mais próximo do que foi idealizado para o projeto. Geralmente são feitos com o auxílio de softwares e permitem que o usuário simule o comportamento do sistema. Com isso, é possível validar as interações e melhorar a user experience. Apesar de ser uma solução mais elaborada, o custo desse tipo de protótipo continua relativamente baixo.",
+            "section": "prototipo"
+        }
+    },
+    {
+        "model": "myapp.card",
+        "pk": 13,
+        "fields":{
+            "title": "Protótipo de Alta Fidelidade",
+            "description": "Este tipo de protótipo oferece uma fidelidade mais próxima possível do resultado final do software. Geralmente são desenvolvidos em linguagem de programação - permitindo mostrar algumas das funcionalidades do sistema - e oferece um alto grau de interatividade. Neste tipo de prototipagem, pode ocorrer a implementação de algumas partes do sistema. Vale destacar também que há um custo maior em sua elaboração, já que demanda mais tempo e conhecimento técnico.",
+            "section": "prototipo"
+        }
+    },
+    {
+        "model": "myapp.card",
+        "pk": 14,
+        "fields":{
+            "title": "Pitch: Estratégia inicial",
+            "description": " Comece se apresentando e mostrando seu projeto de forma direta e objetiva.",
             "section": "pitch"
         }
     },
     {
         "model": "myapp.card",
-        "pk": 5,
+        "pk": 15,
         "fields":{
-            "title": "rtr",
-            "path": "#",
-            "description": "texto 5",
+            "title": "Pitch: Solução",
+            "description": "É neste momento que você mostra que seu serviço é a solução para o problema apresentado anteriormente. Você pode indicar os diferenciais do seu serviço em poucas palavras de forma que o investidor entenda e, se possível, exponha um protótipo.",
+            "section": "pitch"
+        }
+    },
+    {
+        "model": "myapp.card",
+        "pk": 16,
+        "fields":{
+            "title": "Pitch: Conclusão",
+            "description": "A finalização vai depender do apresentador e do ouvinte. Se for um possível cliente, ofereça uma amostra do seu serviço, alguma espécie de teste experimental. No caso de um investidor, aponte as necessidades do negócio. Mas é importante que ao fechar a sua argumentação, o ouvinte seja influenciado a tomar alguma decisão.",
+            "section": "pitch"
+        }
+    },
+
+
+
+    {
+        "model": "myapp.card",
+        "pk": 17,
+        "fields":{
+            "title": "Mentoria: Defina objetivos",
+            "description": "Definir objetivos claros garante que o programa esteja alinhado com as metas da organização e que seja adaptado para atender às necessidades tanto dos participantes quanto da empresa.Especificamente, você precisa identificar os motivos exatos pelos quais deseja implementar um programa de mentoria. ",
             "section": "mentoria"
         }
     },
     {
-        "model": "myapp.like",
-        "pk": 2,
+        "model": "myapp.card",
+        "pk": 18,
         "fields":{
-            "card_id": 1,
-            "user_id": 7
-           
+            "title": "Mentoria: Tenha um sistema de suporte",
+            "description": "Garanta que seus participantes permaneçam engajados e motivados no processo, fornecendo-lhes suporte contínuo. Por exemplo, dê a eles acesso aos recursos que tornam a colaboração mais eficaz e, em seguida, incentive a comunicação e forneça a plataforma certa para que ela ocorra.",
+            "section": "mentoria"
         }
     },
     {
-        "model": "myapp.like",
-        "pk": 3,
+        "model": "myapp.card",
+        "pk": 19,
         "fields":{
-            "card_id": 2,
-            "user_id": 8
-           
-        }
-    },
-    {
-        "model": "myapp.like",
-        "pk": 4,
-        "fields":{
-            "card_id": 2,
-            "user_id": 9
-           
+            "title": "Mentoria: Conclusão",
+            "description": "Ao combinar mentores experientes com colegas de trabalho menos experientes, sua organização pode ajudar a desenvolver uma força de trabalho mais qualificada e engajada. As etapas acima podem ajudá-lo a estabelecer um programa de mentoria eficaz e sustentável e a criar uma cultura organizacional que se concentre no aprendizado e crescimento dos colaboradores como indivíduos e, também, de sua organização como um todo.",
+            "section": "mentoria"
         }
     }
+
 ]
