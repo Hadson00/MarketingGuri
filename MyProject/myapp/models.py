@@ -17,8 +17,8 @@ class Card(models.Model):
     def total_likes(self):
         return Like.objects.filter(card=self).count()
 
-    # def most_liked(self):
-    #     return self.objects.filter(title=title)
+    def most_liked(self):
+       return self.objects.annotate(like_count=Count('like')).order_by('-like_count')[:10]
 
     def user_liked(self, user):
         return Like.objects.filter(card=self, user=user).exists()
@@ -29,9 +29,6 @@ class Card(models.Model):
 class Like(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     card = models.ForeignKey(Card, on_delete=models.CASCADE)
-
-    # def most_liked(self):
-    #     return Like.objects.values('card').annotate(likecount=Count('id')).order_by('-card')[:10]
 
     class Meta:
         unique_together = ('user', 'card')

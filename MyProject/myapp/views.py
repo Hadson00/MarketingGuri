@@ -13,12 +13,14 @@ def home(request):
 def index(request):
     user = request.user    
     card = Card.objects.all()
+    top_cards = Card.most_liked()
     data_card = []
     for cards in card:
         data_card.append(    
             {
             'cards': cards,
             'liked': cards.user_liked(user) if user.is_authenticated else False,
+            'top_cards': top_cards,
             }
         )
     return render(request, 'site/index.html', {'cards': data_card})
