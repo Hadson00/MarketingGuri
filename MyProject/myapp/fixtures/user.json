@@ -1,0 +1,83 @@
+[
+
+    {
+        "model": "users.user",
+        "pk": 10,
+        "fields":{
+            "username": "Raphael1",
+            "password": "Rapha1234@",
+            "email": "raphael@example.com",
+            "is_superuser": true  
+        }
+    },
+    {
+        "model": "users.user",
+        "pk": 11,
+        "fields":{
+           "username": "Ezekiel",
+            "password": "Rapha1234@",
+            "email": "ezekiel@example.com",
+            "is_superuser": false  
+        }
+    },
+    {
+        "model": "users.user",
+        "pk": 13,
+        "fields":{
+            "username": "Hadson2",
+            "password": "Rapha1234@",
+            "email": "hadson@example.com",
+            "is_superuser": false 
+        }
+    },
+    {
+        "model": "users.user",
+        "pk": 14,
+        "fields":{
+            "username": "Maria2",
+            "password": "Rapha1234@",
+            "email": "maria@example.com",
+            "is_superuser": true  
+        }
+    },
+    {
+        "model": "users.user",
+        "pk": 15,
+        "fields":{
+            "username": "Rogerio2",
+            "password": "Rapha1234@",
+            "email": "rogerio@example.com",
+            "is_superuser": false  
+        }
+    },
+    {
+        "model": "users.user",
+        "pk": 16,
+        "fields":{
+            "username": "Pedro2",
+            "password": "Rapha1234@",
+            "email": "pedro@example.com",
+            "is_superuser": false  
+        }
+    },
+    {
+        "model": "users.user",
+        "pk": 17,
+        "fields":{
+            "username": "Igor",
+            "password": "Rapha1234@",
+            "email": "igor@example.com",
+            "is_superuser": false   
+        }
+    },
+    {
+        "model": "users.user",
+        "pk": 18,
+        "fields":{
+            "username": "Flavio",
+            "password": "Rapha1234@",
+            "email": "junior@example.com",
+            "is_superuser": false  
+        }
+    }
+]

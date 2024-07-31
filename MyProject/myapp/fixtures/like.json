@@ -1,0 +1,92 @@
+[
+    {
+    "model": "myapp.like",
+    "pk": 1,
+    "fields":{
+        "card_id": 1,
+        "user_id": 11
+    
+    }
+    },
+    {
+        "model": "myapp.like",
+        "pk": 2,
+        "fields":{
+            "card_id": 1,
+            "user_id": 15
+        
+        }
+    },
+    {
+        "model": "myapp.like",
+        "pk": 3,
+        "fields":{
+            "card_id": 1,
+            "user_id": 13
+        
+        }
+    },
+    {
+        "model": "myapp.like",
+        "pk": 4,
+        "fields":{
+            "card_id": 1,
+            "user_id": 14
+        
+        }
+    },
+    {
+        "model": "myapp.like",
+        "pk": 5,
+        "fields":{
+            "card_id": 2,
+            "user_id": 11
+        
+        }
+    },
+    {
+        "model": "myapp.like",
+        "pk": 6,
+        "fields":{
+            "card_id": 2,
+            "user_id": 15
+        
+        }
+    },
+    {
+        "model": "myapp.like",
+        "pk": 7,
+        "fields":{
+            "card_id": 2,
+            "user_id": 13
+        
+        }
+    },
+    {
+        "model": "myapp.like",
+        "pk": 8,
+        "fields":{
+            "card_id": 3,
+            "user_id": 11
+        
+        }
+    },
+    {
+        "model": "myapp.like",
+        "pk": 9,
+        "fields":{
+            "card_id": 3,
+            "user_id": 15
+        
+        }
+    },
+    {
+        "model": "myapp.like",
+        "pk": 10,
+        "fields":{
+            "card_id": 4,
+            "user_id": 13
+        
+        }
+    }
+]
