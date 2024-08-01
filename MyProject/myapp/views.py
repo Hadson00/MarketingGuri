@@ -4,7 +4,6 @@ from .forms import *
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
 
-
 @login_required
 def home(request):
     card = Card.objects.all()
@@ -13,7 +12,7 @@ def home(request):
 def index(request):
     user = request.user    
     card = Card.objects.all()
-    top_cards = Card.most_liked()
+    top_cards = Card.most_liked(Card)
     data_card = []
     for cards in card:
         data_card.append(    
