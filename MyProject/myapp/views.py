@@ -11,18 +11,24 @@ def home(request):
 
 def index(request):
     user = request.user    
-    card = Card.objects.all()
-    top_cards = Card.most_liked(Card)
+    cards = Card.objects.all()
+    top_cards = Card.most_liked()
     data_card = []
-    for cards in card:
-        data_card.append(    
-            {
-            'cards': cards,
-            'liked': cards.user_liked(user) if user.is_authenticated else False,
-            'top_cards': top_cards,
-            }
-        )
-    return render(request, 'site/index.html', {'cards': data_card})
+    data_top_cards = []   
+    
+    for card in cards:
+        data_card.append({
+            'card': card,
+            'liked': card.user_liked(user) if user.is_authenticated else False,
+        })
+
+    for card in top_cards:
+        data_top_cards.append({
+            'card': card,
+            'liked': card.user_liked(user) if user.is_authenticated else False,
+        })
+
+    return render(request, 'site/index.html', {'cards': data_card, 'top_cards': data_top_cards})
 
 @login_required
 def like_card(request, card_id):

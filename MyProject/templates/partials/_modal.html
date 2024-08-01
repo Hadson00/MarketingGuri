@@ -12,7 +12,6 @@
             </div>
             <div class="modal-footer justify-content-center">
                 <div>
-                    <a href="{% url 'like_card' card.cards.id %}" style="text-decoration: none; color: #000;" id="likeButton" class="like-button {% if card.liked %}liked{% endif %}">
                         {% if card.liked %}
                             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="red" class="bi bi-heart-fill" viewBox="-1 -1 18 16">
                                 <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"/>

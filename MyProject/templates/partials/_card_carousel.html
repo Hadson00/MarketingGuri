@@ -1,23 +1,23 @@
-{% for card in top_cards %}
+{% for item in top_cards %}
 <div class="d-flex">
     <div class="carousel-item">
         <div class="card text-center" style="width: 22rem; height: 100%;">
-            <button style="border: 0; background-color: transparent;" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#card{{card.cards.id}}" style="text-decoration: none;">
+            <button style="border: 0; background-color: transparent;" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#item{{item.card.id}}" style="text-decoration: none;">
                 <div class="card-body">
-                    <h3 style="color: black;">{{card.cards.title}}</h3>
+                    <h3 style="color: black;">{{item.card.title}}</h3>
                     <hr style="margin: 0; color: black; opacity: 1;">
                     <div style="justify-content: space-around; color: black; align-content: center;" class="d-flex">
                         <div class="card-body">
-                            {% if card.liked %}
+                            {% if item.liked %}
                                 <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="auto" fill="red" stroke="red" class="bi bi-heart-fill" viewBox="-1 -1 18 16">
                                     <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"/>
                                 </svg>
-                                {{ card.cards.total_likes }}
+                                {{ item.card.total_likes }}
                             {% else %}
                                 <svg id="like" xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" fill="#fff" stroke="#000" class="bi bi-heart-fill" viewBox="-1 -1 18 16" >
                                     <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"/>
                                 </svg>
-                                {{ card.cards.total_likes }}
+                                {{ item.card.total_likes }}
                             {% endif %}
                         </div>
                     </div>

@@ -18,8 +18,9 @@ class Card(models.Model):
     def total_likes(self):
         return Like.objects.filter(card=self).count()
 
-    def most_liked(self):
-       return self.objects.annotate(like_count=Count('like')).order_by('-like_count')[:10]
+    @classmethod
+    def most_liked(cls):
+       return cls.objects.annotate(like_count=Count('like')).order_by('-like_count')[:10]
 
     def user_liked(self, user):
         return Like.objects.filter(card=self, user=user).exists()
