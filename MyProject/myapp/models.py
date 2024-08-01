@@ -1,5 +1,6 @@
 from django.db import models
 from users.models import User
+from django.db.models import Count
 
 SECTION_CHOICES = {
     'empreendedorismo': 'EMPREENDEDORISMO',

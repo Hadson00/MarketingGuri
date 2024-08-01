@@ -12,7 +12,7 @@ def home(request):
 def index(request):
     user = request.user    
     card = Card.objects.all()
-    top_cards = Card.most_liked()
+    top_cards = Card.most_liked(Card)
     data_card = []
     for cards in card:
         data_card.append(    
